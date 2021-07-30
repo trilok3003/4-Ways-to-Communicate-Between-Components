@@ -1,0 +1,8 @@
+<!-- app.component.html -->
+<div class="parent">
+<h1>App Component</h1>
+<app-header></app-header>
+<h3>Selected Movie: {{selectedMovieName}}</h3>
+
+<app-child [title]="'Make HTTP Calls'" (selectedMovie)="onMovieSelection($event)"></app-child>
+</div>
